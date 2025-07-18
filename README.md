@@ -1,8 +1,7 @@
-# Microsoft-Entra-Conditional-Access-Lab
-# Azure Conditional Access Lab
+# Microsoft Entra Conditional Access Lab
 
 ## Overview
-This lab demonstrates how to build, test, and enforce Conditional Access policies in Microsoft Entra ID (Azure AD).
+This lab demonstrates how to build, test, and enforce Conditional Access policies in Microsoft Entra ID (Azure AD). Multi-Factor Authentication (MFA) is implemented and enforced based on device compliance and network location. Moreso, enforcing Conditional access policy to block legacy authentication protocols.
 
 ---
 
