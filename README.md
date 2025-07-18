@@ -32,6 +32,7 @@ This lab demonstrates how to build, test, and enforce Conditional Access policie
 
 ### 1. Setup Environment
 - Ensure tenant has Entra ID P1 or P2 license
+- Disable Microsoft Security defaults (they conflict with custom policies)
 - Enable MFA and register test users
 - Create two groups: CA‑Included (users affected) and CA‑Excluded (globaladmins). Add user accounts accordingly.
 
@@ -76,13 +77,18 @@ This lab demonstrates how to build, test, and enforce Conditional Access policie
 
 
 ## Backup
-- Exported JSON backup of Conditional Access policies
+-	Connected to Microsoft graph
+ 		Command: Connect-MgGraph -Scopes "Policy.Read.All"
 
-- Sample test results
-- Policy screenshot examples
+-	Create an export script on vs code
+![Policy script](https://imgur.com/gFmoKtS.png)
+
+- Exported JSON backup of Conditional Access policies
+![Exported Policy](https://imgur.com/LPkKEBp.png)
+
 
 ---
 
 ## Author
-**[Your Name]** – Cloud Administrator & IAM Enthusiast  
-🔗 [LinkedIn Profile]  
+**Ohilere Imiere Darlington** – Cloud Administrator & IAM Enthusiast  
+🔗 www.linkedin.com/in/ohilere-imiere-d
