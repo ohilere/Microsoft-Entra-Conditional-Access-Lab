@@ -1,2 +1,0 @@
-Get-MgConditionalAccessPolicy | ConvertTo-Json -Depth 5 | Out-File "CAPoliciesBackup.json"
-

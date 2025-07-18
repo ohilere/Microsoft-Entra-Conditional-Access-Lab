@@ -1,0 +1,11 @@
+$ExportPath = "FilePath"
+$AllPolicies = Get-MgIdentityConditionalAccessPolicy -All
+
+foreach ($Policy in $AllPolicies) {
+    $PolicyName = $Policy.DisplayName -replace '[^a-zA-Z0-9]', '_'
+    $PolicyJSON = $Policy | ConvertTo-Json -Depth 10
+    $PolicyJSON | Out-File "$ExportPath\$PolicyName.json" -Force
+    Write-Host "Exported: $PolicyName"
+}
+
+
